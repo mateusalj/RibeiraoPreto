@@ -1,0 +1,55 @@
+1) Sequência de Fibonacci
+Código em Python:
+def fibonacci_check(n):
+    a, b = 0, 1
+    fib_sequence = [a, b]
+    
+    while b < n:
+        a, b = b, a + b
+        fib_sequence.append(b)
+    
+    if n in fib_sequence:
+        return f"O número {n} pertence à sequência de Fibonacci."
+    else:
+        return f"O número {n} não pertence à sequência de Fibonacci."
+
+# Exemplo de entrada
+numero = 21  # Você pode alterar esse valor
+print(fibonacci_check(numero))
+
+2) Contagem da letra 'a'
+Código em Python:
+def count_letter_a(string):
+    count = string.lower().count('a')
+    return f"A letra 'a' aparece {count} vezes na string."
+
+# Exemplo de entrada
+texto = "Analisando a presença da letra a"
+print(count_letter_a(texto))
+
+3) Valor da variável SOMA
+Após executar o trecho de código:
+int INDICE = 12, SOMA = 0, K = 1; 
+enquanto K < INDICE faça { 
+    K = K + 1; 
+    SOMA = SOMA + K; 
+} 
+imprimir(SOMA);
+
+O valor da variável SOMA será 78. (SOMA = 1 + 2 + 3 + ... + 11 = 66).
+
+4) Complete o próximo elemento
+    a) 9 (sequência ímpar: 1, 3, 5, 7, 9)
+    b) 128 (potência de 2: 2, 4, 8, 16, 32, 64, 128)
+    c) 49 (quadrados: 0, 1, 4, 9, 16, 25, 36, 49)
+    d) 100 (quadrados de números pares: 4, 16, 36, 64, 100)
+    e) 13 (sequência de Fibonacci: 1, 1, 2, 3, 5, 8, 13)
+    f) 20 (sequência que aumenta de forma irregular, mas parece adicionar 1 após 18, depois 2 a partir de 10, então 20).
+
+5) Identificação das lâmpadas
+    Ligue o primeiro interruptor e deixe-o ligado por alguns minutos.
+    Depois, desligue o primeiro interruptor e ligue o segundo interruptor.
+    Vá até a sala das lâmpadas:
+    A lâmpada quente corresponde ao primeiro interruptor.
+    A lâmpada acesa corresponde ao segundo interruptor.
+    A lâmpada apagada e fria corresponde ao terceiro interruptor.
